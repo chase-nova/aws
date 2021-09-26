@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "rapiddevapi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-rapiddevch3-dev-123419-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/889fe7156036063bc0e1d05a4ae32547cfe49452"
+}

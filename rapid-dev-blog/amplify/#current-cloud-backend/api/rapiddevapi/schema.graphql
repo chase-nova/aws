@@ -1,0 +1,6 @@
+type Post @model @key(fields: ["title"]) {
+  id: ID!
+  title: String!
+  content: String!
+  image: String
+}

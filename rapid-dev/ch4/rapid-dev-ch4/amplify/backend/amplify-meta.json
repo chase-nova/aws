@@ -1,0 +1,79 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rapiddevch3-dev-123419-authRole",
+      "UnauthRoleArn": "arn:aws:iam::662053100371:role/amplify-rapiddevch3-dev-123419-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::662053100371:role/amplify-rapiddevch3-dev-123419-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-rapiddevch3-dev-123419-deployment",
+      "UnauthRoleName": "amplify-rapiddevch3-dev-123419-unauthRole",
+      "StackName": "amplify-rapiddevch3-dev-123419",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:662053100371:stack/amplify-rapiddevch3-dev-123419/081927b0-f0e7-11eb-ae51-0aeb5055f07c",
+      "AmplifyAppId": "d99vg92ko504c"
+    }
+  },
+  "auth": {
+    "rapiddevch321255741": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-rapiddevch3-dev-123419-deployment/amplify-cfn-templates/auth/rapiddevch321255741-cloudformation-template.yml",
+        "logicalId": "authrapiddevch321255741"
+      },
+      "lastPushTimeStamp": "2021-08-01T05:53:44.663Z",
+      "output": {
+        "UserPoolId": "ap-northeast-2_Nht3a5ltD",
+        "AppClientIDWeb": "7u0mgdtmanueri3upjjgstldun",
+        "AppClientID": "28stiu2d5mp3l5iq485dnjbt85",
+        "IdentityPoolId": "ap-northeast-2:dfb543a4-863b-418d-99c0-f0fa45c63dd3",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:662053100371:userpool/ap-northeast-2_Nht3a5ltD",
+        "IdentityPoolName": "rapiddevch321255741_identitypool_21255741__dev",
+        "UserPoolName": "rapiddevch321255741_userpool_21255741"
+      },
+      "lastPushDirHash": "D/yoWk6xoS3agA9DtzNC5FE1Ckk="
+    }
+  },
+  "api": {
+    "rapiddevapi": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 365,
+              "description": "dev"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "bdog3p2zmfeqnprjyhi5wl6gmu",
+        "GraphQLAPIEndpointOutput": "https://373hu7n43nbv3hi4b7xgdrfsuq.appsync-api.ap-northeast-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-2unptvmvrngjdozam5ou47djvi"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-rapiddevch3-dev-123419-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apirapiddevapi"
+      },
+      "lastPushTimeStamp": "2021-08-01T05:53:44.672Z",
+      "lastPushDirHash": "OckD4dg6UX+Vlf/XqqHO1gFD3RQ="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-rapiddevch3-dev-123419-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2021-08-01T05:53:44.676Z",
+      "output": {},
+      "lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+    }
+  }
+}
